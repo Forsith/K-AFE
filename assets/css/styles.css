@@ -1,0 +1,423 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+*::-webkit-scrollbar {
+  height: 11px;
+  width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 13px;
+  background-color: #FFFFFF;
+  border: 1px dotted #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #AEAEAE;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: "Oxygen", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #FBFBFB;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #FBFBFB;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #514C4C;
+  flex: 0 0 auto; /* El header ocupa solo el espacio necesario */
+  position: relative;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul .menu-item {
+  margin: 0 20px;
+  position: relative;
+}
+header nav ul .menu-item .submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* Justo debajo del menú principal */
+  left: 50%; /* Centramos el submenú */
+  transform: translateX(-50%); /* Ajustamos para que esté alineado con el centro del padre */
+  display: none;
+  background-color: #FBFBFB;
+  padding: 10px 0;
+  z-index: 100; /* Asegura que el submenú aparezca por encima de otros elementos */
+}
+header nav ul .menu-item .submenu li {
+  padding: 10px 15px;
+}
+header nav ul .menu-item .submenu a {
+  white-space: nowrap;
+}
+header nav ul .menu-item a {
+  color: #514C4C;
+  text-decoration: none;
+  font-family: "Kulim Park", serif;
+  font-size: 21px;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+header nav ul .menu-item a:hover {
+  color: #514C4C;
+}
+header nav ul .menu-item:hover .submenu {
+  display: block;
+}
+header nav ul .menu-item:hover .submenu .submenuhover {
+  display: block;
+}
+header .carrito-container {
+  position: absolute; /* Para poder posicionar el carrito-lista */
+  display: inline-block; /* Para evitar que ocupe toda la línea */
+  right: 1;
+  z-index: 1000;
+}
+header .carrito-container .carrito-icono {
+  position: fixed; /* Fijo en la pantalla */
+  bottom: 60px; /* Distancia desde la parte inferior */
+  right: 50px; /* Distancia desde la derecha */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  border-radius: 50%; /* Hacerlo circular */
+  padding: 10px; /* Espacio alrededor del ícono */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+header .carrito-container .carrito-icono .fa-bag-shopping {
+  font-size: 36px;
+  color: #514C4C;
+  transition: 0.2s ease-in-out, color 0.3s ease;
+}
+header .carrito-container .carrito-icono .fa-bag-shopping:hover {
+  font-size: 40px;
+  color: #050404;
+}
+header .carrito-container .carrito-icono #carrito-count {
+  margin-left: 10px;
+  background-color: #ffbb29;
+  border-radius: 80%;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  position: absolute;
+  right: -5px;
+}
+header .carrito-container .carrito-lista {
+  position: absolute; /* Posicionamiento absoluto respecto al ícono */
+  bottom: 60px; /* Distancia desde el ícono del carrito */
+  right: 0; /* Alineado a la derecha del ícono */
+  background-color: #514C4C; /* Color de fondo */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto flotante */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  width: 600%;
+}
+header .carrito-container .carrito-lista h4 {
+  color: #FFF6E5;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+header .carrito-container .carrito-lista #lista-productos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .carrito-container .carrito-lista #lista-productos li {
+  display: flex; /* Alinear los elementos en fila */
+  justify-content: space-between; /* Distribuir espacio entre el nombre y el botón de eliminar */
+  align-items: center; /* Centrar verticalmente */
+  color: #FFF6E5;
+  font-weight: 900;
+  padding: 10px 0; /* Espaciado vertical entre productos */
+  border-bottom: 1px solid #ddd; /* Línea divisoria entre productos */
+}
+header .carrito-container .carrito-lista #lista-productos li:last-child {
+  border-bottom: none;
+}
+header .carrito-container .carrito-lista #lista-productos li span {
+  font-weight: bold;
+}
+header .carrito-container .carrito-lista #lista-productos .btn-eliminar {
+  background-color: #c0392b;
+  color: white; /* Color de texto blanco */
+  border: none; /* Eliminar bordes */
+  border-radius: 50%; /* Forma redonda */
+  width: 25px; /* Ancho del botón */
+  height: 25px; /* Alto del botón */
+  text-align: center; /* Centrar el texto */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  font-size: 14px; /* Tamaño de letra */
+  transition: 0.2s ease-in;
+  margin-left: 20px;
+}
+header .carrito-container .carrito-lista #carrito-total {
+  font-size: 1.2rem; /* Tamaño de letra más grande */
+  font-weight: bold; /* Texto en negrita */
+  text-align: right; /* Alinear el total a la derecha */
+  margin-top: 15px; /* Separar el total del listado */
+  color: #FFF6E5; /* Color del texto */
+}
+header .carrito-container .carrito-lista #pagar-btn {
+  display: block; /* Hacer que ocupe toda la fila */
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  background-color: #FFF6E5;
+  border: none; /* Eliminar bordes */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  font-size: 1rem; /* Tamaño de letra */
+  margin-top: 20px; /* Espaciado superior */
+  text-align: center; /* Centrar el texto */
+  transition: 0.3s ease-in;
+  color: #514C4C;
+  font-weight: 900;
+}
+header .carrito-container .carrito-lista #pagar-btn:hover {
+  background-color: #229954; /* Efecto hover más oscuro */
+  color: #FFF6E5;
+}
+
+.producto-destacado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 40px;
+  background-color: rgba(245, 245, 245, 0);
+}
+.producto-destacado .descripcion-producto {
+  max-width: 45%; /* Reduce el ancho para dejar espacio a la imagen */
+  margin-right: 20px; /* Espacio entre texto e imagen */
+}
+.producto-destacado .descripcion-producto h1 {
+  font-size: 48px;
+  text-align: left;
+  color: #514C4C;
+  font-weight: 500;
+  text-align: center;
+  width: 100;
+}
+.producto-destacado .imagen-producto-destacado img {
+  width: auto; /* Mantiene el ancho original */
+  max-height: 50vh; /* Limita la altura al 90% de la ventana */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
+}
+.producto-destacado button {
+  width: 185px;
+  height: 53px;
+  background-color: #FBFBFB;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #514C4C;
+  border-style: solid;
+  font-family: "Noto Serif KR", serif;
+}
+
+#products-list {
+  margin: 20px;
+}
+#products-list .prod-category {
+  font-size: 42px;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 50px;
+  color: #333;
+}
+#products-list #cafeteria-products, #products-list #bakery-products {
+  padding: 20px;
+  margin: 20px;
+}
+#products-list #cafeteria-products h3, #products-list #bakery-products h3 {
+  margin: 30px;
+  font-size: 36px;
+  color: #514C4C;
+  font-family: "Kulim Park", sans-serif;
+}
+#products-list #cafeteria-products #hot-coffee, #products-list #cafeteria-products #cold-coffee, #products-list #cafeteria-products #special-coffee, #products-list #cafeteria-products #sweet-products, #products-list #cafeteria-products #salad-products, #products-list #bakery-products #hot-coffee, #products-list #bakery-products #cold-coffee, #products-list #bakery-products #special-coffee, #products-list #bakery-products #sweet-products, #products-list #bakery-products #salad-products {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se muevan a la siguiente línea si no caben */
+  gap: 40px; /* Espacio entre los productos */
+  justify-content: center; /* Alinea los productos al inicio de la fila */
+}
+#products-list #cafeteria-products #hot-coffee .producto-item, #products-list #cafeteria-products #cold-coffee .producto-item, #products-list #cafeteria-products #special-coffee .producto-item, #products-list #cafeteria-products #sweet-products .producto-item, #products-list #cafeteria-products #salad-products .producto-item, #products-list #bakery-products #hot-coffee .producto-item, #products-list #bakery-products #cold-coffee .producto-item, #products-list #bakery-products #special-coffee .producto-item, #products-list #bakery-products #sweet-products .producto-item, #products-list #bakery-products #salad-products .producto-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  overflow: hidden;
+  width: 274px;
+  height: 509px;
+  text-align: center;
+  transition: transform 0.3 ease-in-out;
+  margin-bottom: 30px; /* Espacio debajo de cada tarjeta */
+  color: #514C4C;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item:hover, #products-list #cafeteria-products #cold-coffee .producto-item:hover, #products-list #cafeteria-products #special-coffee .producto-item:hover, #products-list #cafeteria-products #sweet-products .producto-item:hover, #products-list #cafeteria-products #salad-products .producto-item:hover, #products-list #bakery-products #hot-coffee .producto-item:hover, #products-list #bakery-products #cold-coffee .producto-item:hover, #products-list #bakery-products #special-coffee .producto-item:hover, #products-list #bakery-products #sweet-products .producto-item:hover, #products-list #bakery-products #salad-products .producto-item:hover {
+  transform: translateY(-5px); /* Un pequeño levantamiento en lugar de escalado */
+}
+#products-list #cafeteria-products #hot-coffee .producto-item img, #products-list #cafeteria-products #cold-coffee .producto-item img, #products-list #cafeteria-products #special-coffee .producto-item img, #products-list #cafeteria-products #sweet-products .producto-item img, #products-list #cafeteria-products #salad-products .producto-item img, #products-list #bakery-products #hot-coffee .producto-item img, #products-list #bakery-products #cold-coffee .producto-item img, #products-list #bakery-products #special-coffee .producto-item img, #products-list #bakery-products #sweet-products .producto-item img, #products-list #bakery-products #salad-products .producto-item img {
+  width: 100%;
+  height: 422px;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+#products-list #cafeteria-products #hot-coffee .producto-item h4, #products-list #cafeteria-products #cold-coffee .producto-item h4, #products-list #cafeteria-products #special-coffee .producto-item h4, #products-list #cafeteria-products #sweet-products .producto-item h4, #products-list #cafeteria-products #salad-products .producto-item h4, #products-list #bakery-products #hot-coffee .producto-item h4, #products-list #bakery-products #cold-coffee .producto-item h4, #products-list #bakery-products #special-coffee .producto-item h4, #products-list #bakery-products #sweet-products .producto-item h4, #products-list #bakery-products #salad-products .producto-item h4 {
+  font-size: 22px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item p, #products-list #cafeteria-products #cold-coffee .producto-item p, #products-list #cafeteria-products #special-coffee .producto-item p, #products-list #cafeteria-products #sweet-products .producto-item p, #products-list #cafeteria-products #salad-products .producto-item p, #products-list #bakery-products #hot-coffee .producto-item p, #products-list #bakery-products #cold-coffee .producto-item p, #products-list #bakery-products #special-coffee .producto-item p, #products-list #bakery-products #sweet-products .producto-item p, #products-list #bakery-products #salad-products .producto-item p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: left;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #cold-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #special-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #sweet-products .producto-item .cantidad-producto, #products-list #cafeteria-products #salad-products .producto-item .cantidad-producto, #products-list #bakery-products #hot-coffee .producto-item .cantidad-producto, #products-list #bakery-products #cold-coffee .producto-item .cantidad-producto, #products-list #bakery-products #special-coffee .producto-item .cantidad-producto, #products-list #bakery-products #sweet-products .producto-item .cantidad-producto, #products-list #bakery-products #salad-products .producto-item .cantidad-producto {
+  width: 50px;
+  margin-bottom: 10px;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .infoprod, #products-list #cafeteria-products #cold-coffee .producto-item .infoprod, #products-list #cafeteria-products #special-coffee .producto-item .infoprod, #products-list #cafeteria-products #sweet-products .producto-item .infoprod, #products-list #cafeteria-products #salad-products .producto-item .infoprod, #products-list #bakery-products #hot-coffee .producto-item .infoprod, #products-list #bakery-products #cold-coffee .producto-item .infoprod, #products-list #bakery-products #special-coffee .producto-item .infoprod, #products-list #bakery-products #sweet-products .producto-item .infoprod, #products-list #bakery-products #salad-products .producto-item .infoprod {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .infoprod .buy-btn, #products-list #cafeteria-products #cold-coffee .producto-item .infoprod .buy-btn, #products-list #cafeteria-products #special-coffee .producto-item .infoprod .buy-btn, #products-list #cafeteria-products #sweet-products .producto-item .infoprod .buy-btn, #products-list #cafeteria-products #salad-products .producto-item .infoprod .buy-btn, #products-list #bakery-products #hot-coffee .producto-item .infoprod .buy-btn, #products-list #bakery-products #cold-coffee .producto-item .infoprod .buy-btn, #products-list #bakery-products #special-coffee .producto-item .infoprod .buy-btn, #products-list #bakery-products #sweet-products .producto-item .infoprod .buy-btn, #products-list #bakery-products #salad-products .producto-item .infoprod .buy-btn {
+  background-color: #514C4C;
+  width: 40px;
+  height: 30px;
+  color: #FFF6E5;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .infoprod .buy-btn:hover, #products-list #cafeteria-products #cold-coffee .producto-item .infoprod .buy-btn:hover, #products-list #cafeteria-products #special-coffee .producto-item .infoprod .buy-btn:hover, #products-list #cafeteria-products #sweet-products .producto-item .infoprod .buy-btn:hover, #products-list #cafeteria-products #salad-products .producto-item .infoprod .buy-btn:hover, #products-list #bakery-products #hot-coffee .producto-item .infoprod .buy-btn:hover, #products-list #bakery-products #cold-coffee .producto-item .infoprod .buy-btn:hover, #products-list #bakery-products #special-coffee .producto-item .infoprod .buy-btn:hover, #products-list #bakery-products #sweet-products .producto-item .infoprod .buy-btn:hover, #products-list #bakery-products #salad-products .producto-item .infoprod .buy-btn:hover {
+  background-color: #FFF6E5;
+  color: #514C4C;
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #cold-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #special-coffee .producto-item .cantidad-producto, #products-list #cafeteria-products #sweet-products .producto-item .cantidad-producto, #products-list #cafeteria-products #salad-products .producto-item .cantidad-producto, #products-list #bakery-products #hot-coffee .producto-item .cantidad-producto, #products-list #bakery-products #cold-coffee .producto-item .cantidad-producto, #products-list #bakery-products #special-coffee .producto-item .cantidad-producto, #products-list #bakery-products #sweet-products .producto-item .cantidad-producto, #products-list #bakery-products #salad-products .producto-item .cantidad-producto {
+  width: 60px; /* Ajusta el ancho */
+  padding: 8px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de texto */
+  text-align: center; /* Centrar el número */
+  border: 2px solid #ccc; /* Borde más grueso */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Quita el contorno al hacer clic */
+  transition: border-color 0.3s ease; /* Transición suave al cambiar el borde */
+}
+#products-list #cafeteria-products #hot-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #cold-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #special-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #sweet-products .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #salad-products .producto-item .cantidad-producto:focus, #products-list #bakery-products #hot-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #cold-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #special-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #sweet-products .producto-item .cantidad-producto:focus, #products-list #bakery-products #salad-products .producto-item .cantidad-producto:focus {
+  border-color: #4CAF50; /* Color verde cuando el campo está activo */
+}
+
+.about-section {
+  padding: 60px 20px;
+  border-top: solid;
+  border-width: 1px;
+  text-align: center;
+}
+.about-section .about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-section .about-container .about-title {
+  font-size: 2.5rem;
+  color: #514C4C;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.about-section .about-container .about-content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.about-section .about-container .about-content .about-text {
+  max-width: 600px;
+  color: #514C4C;
+  font-size: 1.1rem;
+}
+.about-section .about-container .about-content .about-text p {
+  margin-bottom: 20px;
+}
+.about-section .about-container .about-content .about-text p em {
+  color: #fd3d6d; /* Rosa suave */
+  font-style: italic;
+}
+.about-section .about-container .about-content .about-text strong {
+  color: #514C4C;
+}
+.about-section .about-container .about-content .about-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+#powered-by {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#powered-by p {
+  margin: 0;
+  font-family: "Big Shoulders Text", sans-serif;
+}

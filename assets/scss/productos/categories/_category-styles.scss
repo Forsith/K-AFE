@@ -1,0 +1,18 @@
+#cafeteria-products ,#bakery-products {
+    padding: 20px;
+    margin: 20px;
+    h3{
+    margin: 30px;
+    font-size: 36px;
+    color:#514C4C;
+    font-family: "Kulim Park", sans-serif;
+    }
+    #hot-coffee, #cold-coffee, #special-coffee, #sweet-products, #salad-products {
+        display: flex;
+        flex-wrap: wrap;  /* Permite que los productos se muevan a la siguiente línea si no caben */
+        gap: 40px; /* Espacio entre los productos */
+        justify-content: center; /* Alinea los productos al inicio de la fila */
+        @import "tarjetas";
+    }
+
+}

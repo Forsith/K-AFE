@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "nombre": "Café Espresso",
+    "descripcion": "Un espresso fuerte y lleno de sabor.",
+    "precio": 8.99,
+    "sección": "cafeteria",
+    "tipo": "calientes",
+    "img": "https://lamafia.es/wp-content/uploads/2019/08/cafe-espresso-1.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Café Latte",
+    "descripcion": "Suave y cremoso con leche espumosa.",
+    "precio": 7.95,
+    "sección": "cafeteria",
+    "tipo": "calientes",
+    "img": "https://clubdelcafe.net/wp-content/uploads/2020/05/taza-de-caf%C3%A9-latte-1024x683.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cappuccino",
+    "descripcion": "Un cappuccino clásico con espuma.",
+    "precio": 6.5,
+    "sección": "cafeteria",
+    "tipo": "calientes",
+    "img": "https://lamafia.es/wp-content/uploads/2019/07/capuccino-italiano.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Flat white",
+    "descripcion": "Esta es una descripción para un producto",
+    "precio": 8.5,
+    "sección": "cafeteria",
+    "tipo": "calientes",
+    "img": "https://image.ondacero.es/clipping/cmsimages02/2024/03/11/65A2B797-9785-4316-8F13-D6B6F6FB6FD6/que-flat-white-que-diferencia-latte_104.jpg?crop=4016,4016,x1467,y0&width=1200&height=1200&optimize=low&format=webply"
+  },
+  {
+    "id": 5,
+    "nombre": "Iced Americano",
+    "descripcion": "Americano servido frío y refrescante.",
+    "precio": 7.5,
+    "sección": "cafeteria",
+    "tipo": "frios",
+    "img": "https://images.ctfassets.net/v601h1fyjgba/1vlXSpBbgUo9yLzh71tnOT/a1afdbe54a383d064576b5e628035f04/Iced_Americano.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Iced Latte",
+    "descripcion": "Latte frío y suave con hielo.",
+    "precio": 8.99,
+    "sección": "cafeteria",
+    "tipo": "frios",
+    "img": "https://dwellbymichelle.com/wp-content/uploads/2020/06/DWELL-Iced-Cold-Brew-Latte-e1592262551330.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Iced Mocha",
+    "descripcion": "Una deliciosa mezcla de café y chocolate.",
+    "precio": 7,
+    "sección": "cafeteria",
+    "tipo": "frios",
+    "img": "https://i.pinimg.com/736x/94/47/44/944744fafc801a5f2de37158c009a2c3.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Affogato Helado",
+    "descripcion": "Una deliciosa mezcla de café y chocolate.",
+    "precio": 7,
+    "sección": "cafeteria",
+    "tipo": "frios",
+    "img": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/07/07/affogato.jpeg"
+  },
+  {
+    "id": 9,
+    "nombre": "Caramel Macchiato",
+    "descripcion": "Un café macchiato con un toque de caramelo.",
+    "precio": 6.5,
+    "sección": "cafeteria",
+    "tipo": "especiales",
+    "img": "https://thelittlestcrumb.com/wp-content/uploads/salted-caramel-macchiato-featured-image-1.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Latte Lavanda",
+    "descripcion": "Un café macchiato con un toque de caramelo.",
+    "precio": 7.5,
+    "sección": "cafeteria",
+    "tipo": "especiales",
+    "img": "https://static.vecteezy.com/system/resources/previews/030/215/752/non_2x/of-some-lavender-latte-drink-elegantly-plated-on-a-table-generative-ai-photo.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Peppermint Mocha",
+    "descripcion": "Mezcla de menta y chocolate con café.",
+    "precio": 8.5,
+    "sección": "cafeteria",
+    "tipo": "especiales",
+    "img": "https://www.windingcreekranch.org/wp-content/uploads/2022/11/starbucks-peppermint-mocha-hero3-1200-1200-1-of-1.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Vanilla Latte",
+    "descripcion": "Latte con un toque de vainilla dulce.",
+    "precio": 8,
+    "sección": "cafeteria",
+    "tipo": "especiales",
+    "img": "https://www.jerseygirlcooks.com/wp-content/uploads/2023/05/12x12-vanilla-latte.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Korean Garlic Bread",
+    "descripcion": "Pan crujiente relleno de queso crema y cubierto con una mezcla de ajo y mantequilla.",
+    "precio": 10,
+    "sección": "bakery",
+    "tipo": "salados",
+    "img": "https://api.vip.foodnetwork.ca/wp-content/uploads/2022/09/korean-cream-cheese-garlic-bread-feat.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Sweet Potato Bun",
+    "descripcion": "Pan suave relleno de puré de camote, con un toque dulce y salado.",
+    "precio": 8,
+    "sección": "bakery",
+    "tipo": "salados",
+    "img": "https://www.seriouseats.com/thmb/wVyz6QIJkbERu-HtEtBSv55uTso=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__02__20200205-banchan-gamja-bokkeum-stir-fried-potatoes-vicky-wasik-14-5525303b04f34b6ab4df131ccb17bdb8.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Kimchi Tart",
+    "descripcion": "Tartaleta de masa ligera con un relleno picante de kimchi y queso.",
+    "precio": 8.9,
+    "sección": "bakery",
+    "tipo": "salados",
+    "img": "https://www.closetcooking.com/wp-content/uploads/2009/09/Zucchini-and-Kimchi-Quiche-with-a-Brown-Rice-Crust-500.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Empanada de Bulgogi",
+    "descripcion": "Empanadas rellenas de carne de res marinada al estilo bulgogi, con un toque de salsa de soja y ajo.",
+    "precio": 9,
+    "sección": "bakery",
+    "tipo": "salados",
+    "img": "https://scontent.faep14-3.fna.fbcdn.net/v/t1.6435-9/68442357_881861412191251_6082775577880690688_n.jpg?stp=dst-jpg_s720x720&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE-4ym-14zmxlJDOSKnhmcosEiGw_sfvrywSIbD-x--vK_2Vyi0F4IJpz2QyhGuxlk&_nc_ohc=YFaf_shcwUIQ7kNvgGooV24&_nc_ht=scontent.faep14-3.fna&_nc_gid=ACLXbqEFQ7Xq4jvKhQDY2QA&oh=00_AYAyB680yx5GcvfQD1-z9ozdNkUUtawLTtz49s86aejs3A&oe=6715137C"
+  },
+  {
+    "id": 17,
+    "nombre": "Melon Pan",
+    "descripcion": "Pan suave y esponjoso con una capa crujiente de galleta que tiene un ligero sabor a melón.",
+    "precio": 7,
+    "sección": "bakery",
+    "tipo": "dulces",
+    "img": "https://comoenjapon.com/wp-content/uploads/2022/04/meronpan.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Strawberry Mochi",
+    "descripcion": "Delicados mochi rellenos de fresas frescas y crema, combinando una textura suave y un sabor dulce.",
+    "precio": 6.5,
+    "sección": "bakery",
+    "tipo": "dulces",
+    "img": "https://icecreamfromscratch.com/wp-content/uploads/2023/05/Mochi-Ice-Cream-1.2-720x720.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Custard Cream Bun",
+    "descripcion": "Panecillo suave relleno de crema pastelera dulce y espolvoreado con azúcar glas.",
+    "precio": 8,
+    "sección": "bakery",
+    "tipo": "dulces",
+    "img": "https://images.squarespace-cdn.com/content/v1/5216e267e4b0cb074c79fdb3/1453703502943-KXIIZ63399S3JUQAI4ZX/image-asset.jpeg"
+  },
+  {
+    "id": 20,
+    "nombre": "Matcha",
+    "precio": 7.5,
+    "descripcion": "Pastel esponjoso con un toque de matcha, decorado con crema batida y polvo de té verde.",
+    "sección": "bakery",
+    "tipo": "dulces",
+    "img": "https://takestwoeggs.com/wp-content/uploads/2023/05/Matcha-Cake-Recipe-Takestwoeggs-final-photography-1.jpg"
+  }
+]

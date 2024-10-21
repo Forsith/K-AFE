@@ -1,0 +1,77 @@
+.carrito-lista {
+        position: absolute; /* Posicionamiento absoluto respecto al ícono */
+        bottom: 60px; /* Distancia desde el ícono del carrito */
+        right: 0; /* Alineado a la derecha del ícono */
+        background-color: $grisOscuro; /* Color de fondo */
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 10px; /* Espacio interno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto flotante */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+        width: 600%;
+    h4{
+        color: $crema;
+        margin-bottom: 0;
+        font-size: 16px;    
+    }
+    #lista-productos{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            display: flex;             /* Alinear los elementos en fila */
+            justify-content: space-between; /* Distribuir espacio entre el nombre y el botón de eliminar */
+            align-items: center;       /* Centrar verticalmente */
+            color: $crema;
+            font-weight: 900;
+            padding: 10px 0;           /* Espaciado vertical entre productos */
+            
+            border-bottom: 1px solid #ddd; /* Línea divisoria entre productos */
+            &:last-child{
+                border-bottom: none;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        .btn-eliminar{
+            background-color:#c0392b; 
+            color: white;              /* Color de texto blanco */
+            border: none;              /* Eliminar bordes */
+            border-radius: 50%;        /* Forma redonda */
+            width: 25px;               /* Ancho del botón */
+            height: 25px;              /* Alto del botón */
+            text-align: center;        /* Centrar el texto */
+            cursor: pointer;           /* Cambiar el cursor al pasar por encima */
+            font-size: 14px;           /* Tamaño de letra */
+            transition: 0.2s ease-in;
+            margin-left: 20px;
+
+        }
+    }
+    #carrito-total{
+        font-size: 1.2rem;         /* Tamaño de letra más grande */
+        font-weight: bold;         /* Texto en negrita */
+        text-align: right;         /* Alinear el total a la derecha */
+        margin-top: 15px;          /* Separar el total del listado */
+        color:$crema;               /* Color del texto */
+    }
+    #pagar-btn {
+        display: block;            /* Hacer que ocupe toda la fila */
+        width: 100%;               /* Ancho completo */
+        padding: 10px;             /* Espaciado interno */
+        background-color: $crema;      
+        border: none;              /* Eliminar bordes */
+        border-radius: 4px;        /* Bordes redondeados */
+        cursor: pointer;           /* Cambiar el cursor al pasar por encima */
+        font-size: 1rem;           /* Tamaño de letra */
+        margin-top: 20px;          /* Espaciado superior */
+        text-align: center;        /* Centrar el texto */
+        transition: 0.3s ease-in;
+        color:$grisOscuro;
+        font-weight: 900;
+        &:hover{
+            background-color: #229954; /* Efecto hover más oscuro */
+            color: $crema;
+        }
+    }
+}

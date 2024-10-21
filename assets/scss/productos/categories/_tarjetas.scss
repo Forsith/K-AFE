@@ -1,0 +1,79 @@
+.producto-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  overflow: hidden;
+  width: 274px;
+  height: 509px;
+  text-align: center;
+  transition: transform 0.3 ease-in-out;
+  margin-bottom: 30px; /* Espacio debajo de cada tarjeta */
+  color: $grisOscuro;
+  &:hover {
+    transform: translateY(
+      -5px
+    ); /* Un pequeño levantamiento en lugar de escalado */
+
+    
+  }
+  
+  img {
+    width: 100%;
+    height: 422px;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  }
+  h4{
+    font-size: 22px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: left;
+  }
+  .cantidad-producto {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.infoprod{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 10px;
+  .buy-btn {
+    background-color: $grisOscuro;
+    width: 40px;
+    height: 30px;
+    color:$crema;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    &:hover{
+        background-color: $crema;
+        color: $grisOscuro;
+    }
+}
+}
+
+.cantidad-producto {
+    width: 60px;  /* Ajusta el ancho */
+    padding: 8px;  /* Espaciado interno */
+    font-size: 16px;  /* Tamaño de texto */
+    text-align: center;  /* Centrar el número */
+    border: 2px solid #ccc;  /* Borde más grueso */
+    border-radius: 5px;  /* Bordes redondeados */
+    outline: none;  /* Quita el contorno al hacer clic */
+    transition: border-color 0.3s ease;  /* Transición suave al cambiar el borde */
+    &:focus{
+        border-color: #4CAF50;  /* Color verde cuando el campo está activo */
+    }
+    }
+}
+

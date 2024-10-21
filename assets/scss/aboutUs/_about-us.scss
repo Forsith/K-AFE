@@ -1,0 +1,44 @@
+.about-section {
+    padding: 60px 20px;
+    border-top: solid;
+    border-width:1px ;
+    text-align: center;
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        .about-title {
+            font-size: 2.5rem;
+            color: $grisOscuro;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .about-content {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            .about-text {
+                max-width: 600px;
+                color: $grisOscuro;
+                font-size: 1.1rem;
+                p{
+                    margin-bottom: 20px;
+                    em{
+                        color: #fd3d6d; /* Rosa suave */
+                        font-style: italic;
+                    }
+                }
+                strong {
+                    color: $grisOscuro
+                }
+                
+            }
+            .about-image img {
+                width: 100%;
+                max-width: 500px;    
+            }
+        }
+    }
+}

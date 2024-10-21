@@ -1,0 +1,12 @@
+#products-list {
+    margin: 20px;
+    .prod-category{
+        font-size: 42px;
+        font-family: "Kulim Park", sans-serif;;
+        font-weight: normal;
+        text-align: center;
+        margin: 50px;
+        color: #333;
+    }
+    @import "./categories/category-styles";
+}

@@ -1,0 +1,37 @@
+.carrito-container {
+    position: absolute; /* Para poder posicionar el carrito-lista */
+    display: inline-block; /* Para evitar que ocupe toda la línea */
+    right: 1;
+    z-index: 1000;
+
+    .carrito-icono {
+        position: fixed; /* Fijo en la pantalla */
+        bottom: 60px; /* Distancia desde la parte inferior */
+        right: 50px; /* Distancia desde la derecha */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+        border-radius: 50%; /* Hacerlo circular */
+        padding: 10px; /* Espacio alrededor del ícono */
+        cursor: pointer; /* Cambia el cursor al pasar por encima */
+        .fa-bag-shopping{
+            font-size: 36px;
+            color: $grisOscuro;
+            transition: 0.2s ease-in-out, color 0.3s ease;
+            &:hover{
+                font-size: 40px;
+                color: #050404;
+            }
+        }
+        #carrito-count {
+            margin-left: 10px;
+            background-color: #ffbb29;
+            border-radius: 80%;
+            padding: 5px 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #000000;
+            position: absolute;
+            right: -5px
+        }
+    }
+    @import "carrito-lista";
+}

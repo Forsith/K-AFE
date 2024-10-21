@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <ul>
+            <li class="menu-item">
+              <a href="#cafeteria-section">Cafetería</a>
+              <ul class="submenu">
+                <li><a href="#hot">Calientes</a></li>
+                <li><a href="#cold">Frios</a></li>
+                <li><a href="#special">Especiales</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#bakery-section">Bakery</a>
+              <ul class="submenu">
+                <li><a href="#sweet">Dulces</a></li>
+                <li><a href="#salad">Salados</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo-box">
+          <img src="./assets/img/Logo.png" alt="" width="130px" />
+        </div>
+        <nav>
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <ul>
+            <li class="menu-item">
+              <a href="#cafeteria-section">Cafetería</a>
+            </li>
+            <li class="menu-item">
+              <a href="#bakery-section">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="carrito-container">
+          <div class="carrito-icono" id="carrito-icono">
+            <div id="carrito-lista" class="carrito-lista" style="display: none">
+              <h4>Productos en el carrito:</h4>
+              <ul id="lista-productos"></ul>
+              <div id="carrito-total">Total: $0.00</div>
+            </div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="carrito-count">0</span>
+          </div>
+
+        </div> 
+      </header>
+
+      <!-- Sección de Producto Destacado -->
+      <section class="producto-destacado">
+        <div class="descripcion-producto">
+          <h1>EMPIEZA TU DÍA <br />CON NUESTRO MEJOR CAFÉ.</h1>
+        </div>
+        <div class="imagen-producto-destacado">
+          <img src="./assets/img/COffe estate.png" alt="Producto Destacado" />
+        </div>
+        <!-- <button>Ver mas</button> -->
+      </section>
+    </main>
+
+    <div id="products-list">
+      <h2 class="prod-category" id="cafeteria-section">Cafeteria</h2>
+      <section id="cafeteria-products">
+        <h3 id="hot">Calientes</h3>
+        <div id="hot-coffee"></div>
+
+        <h3 id="cold">Frios</h3>
+        <div id="cold-coffee"></div>
+
+        <h3 id="special">Especiales</h3>
+        <div id="special-coffee"></div>
+      </section>
+
+      <h2 class="prod-category" id="bakery-section">Bakery</h2>
+      <section id="bakery-products">
+        <h3 id="sweet">Dulces</h3>
+        <div id="sweet-products"></div>
+
+        <h3 id="salad">Salados</h3>
+        <div id="salad-products"></div>
+      </section>
+    </div>
+
+    <section id="about-us" class="about-section">
+      <div class="about-container">
+        <h2 class="about-title">About K-AFE</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Welcome to <strong>K-AFE</strong>, your go-to destination for
+              authentic Korean coffee experiences. At K-AFE, we blend tradition
+              with modernity, offering a curated selection of beverages and
+              snacks that celebrate the rich flavors of Korea.
+            </p>
+            <p>
+              Our journey began with the passion to share Korea’s coffee
+              culture, and today, we stand as a bridge between the old and the
+              new. Whether you crave a traditional <em>dalgo-na coffee</em> or a
+              modern fusion of flavors, we are here to serve you with
+              high-quality products and an unforgettable experience.
+            </p>
+            <p>
+              Explore our selection, and enjoy the taste of Korea wherever you
+              are.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="/assets//img/Logo.png" alt="K-FE ambiance" />
+          </div>
+        </div>
+      </div>
+    </section> 
+
+     <section id="powered-by">
+      <p>Powered by RICOMALT</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="App.js"></script>
+  </body>
+</html>
