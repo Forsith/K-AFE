@@ -28,14 +28,27 @@
             object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
         }
     }
-    button{
-        width: 185px;
-        height: 53px;
-        background-color: #FBFBFB;
-        border-radius: 50px;
-        border-width: 1px;
-        border-color: #514C4C;
-        border-style: solid;
-        font-family: "Noto Serif KR", serif;
+    @media (max-width:626px){
+    
+    
+    .descripcion-producto{
+        h1{
+            font-size: 24px;
+            text-align: center;
+            font-weight: 700;
+            width: 300px;
+        } 
     }
+    .imagen-producto-destacado {
+
+        img {
+
+            width: auto; /* Mantiene el ancho original */
+            max-height: 32vh; /* Limita la altura al 90% de la ventana */
+            height: auto; /* Mantiene la proporción de la imagen */
+            object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
+        }
+    }
+    
+}
 }

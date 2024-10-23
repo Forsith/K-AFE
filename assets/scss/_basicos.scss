@@ -8,6 +8,9 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    @media (max-width:626px){
+        height: 70vh;
+    }
 }
 body{
     background-color:#FBFBFB ;

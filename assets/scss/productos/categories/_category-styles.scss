@@ -6,6 +6,9 @@
     font-size: 36px;
     color:#514C4C;
     font-family: "Kulim Park", sans-serif;
+    @media (max-width: 626px){
+        font-size: 30px;
+    }
     }
     #hot-coffee, #cold-coffee, #special-coffee, #sweet-products, #salad-products {
         display: flex;
@@ -13,6 +16,9 @@
         gap: 40px; /* Espacio entre los productos */
         justify-content: center; /* Alinea los productos al inicio de la fila */
         @import "tarjetas";
+        @media(max-width:626px){
+            gap: 20px;
+        }
     }
 
 }
