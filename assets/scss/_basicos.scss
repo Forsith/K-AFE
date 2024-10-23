@@ -4,14 +4,16 @@
     padding: 0px;
     font-family: "Oxygen", sans-serif; ;
 }
+$responsive: 412px;
 main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    @media (max-width:500px){
-        height: 65vh;
+    @media (max-width:$responsive){
+        height: 60vh;
     }
 }
 body{
     background-color:#FBFBFB ;
 }
+

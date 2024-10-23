@@ -76,7 +76,7 @@
     }
     }
 
-    @media (max-width:500px){
+    @media (max-width:$responsive){
       height: 420px;
       
       img {

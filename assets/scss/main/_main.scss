@@ -28,7 +28,7 @@
             object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
         }
     }
-    @media (max-width:500px){
+    @media (max-width:$responsive){
     
     
     .descripcion-producto{
@@ -44,7 +44,7 @@
         img {
 
             width: auto; /* Mantiene el ancho original */
-            max-height: 28vh; /* Limita la altura al 90% de la ventana */
+            max-height: 24vh; /* Limita la altura al 90% de la ventana */
             height: auto; /* Mantiene la proporción de la imagen */
             object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
         }
