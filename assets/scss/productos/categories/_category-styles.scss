@@ -16,7 +16,7 @@
         gap: 40px; /* Espacio entre los productos */
         justify-content: center; /* Alinea los productos al inicio de la fila */
         @import "tarjetas";
-        @media(max-width:626px){
+        @media(max-width:500px){
             gap: 20px;
         }
     }

@@ -51,7 +51,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   main {
     height: 70vh;
   }
@@ -77,12 +77,12 @@ header {
 header .logo-resp {
   display: none;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header .logo-resp {
     display: block;
   }
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header .logo {
     display: none;
   }
@@ -106,7 +106,7 @@ header nav ul {
   color: black;
   font-size: 18px;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header nav ul {
     flex-direction: column;
     align-items: end;
@@ -149,7 +149,7 @@ header nav ul .menu-item:hover .submenu {
 header nav ul .menu-item:hover .submenu .submenuhover {
   display: block;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header nav ul .menu-item {
     display: flex;
     flex-direction: column;
@@ -159,12 +159,12 @@ header nav ul .menu-item:hover .submenu .submenuhover {
 header nav .cerrar-menu {
   display: none;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header nav .cerrar-menu {
     display: block;
   }
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header nav {
     position: absolute;
     flex-direction: column;
@@ -185,7 +185,7 @@ header nav .cerrar-menu {
 header .abrir-menu {
   display: none;
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   header .abrir-menu {
     font-size: 32px;
     display: block;
@@ -330,7 +330,7 @@ header .carrito-container .carrito-lista #pagar-btn:hover {
   height: auto; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Asegura que la imagen se ajuste sin recortes */
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   .producto-destacado .descripcion-producto h1 {
     font-size: 24px;
     text-align: center;
@@ -449,7 +449,7 @@ header .carrito-container .carrito-lista #pagar-btn:hover {
 #products-list #cafeteria-products #hot-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #cold-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #special-coffee .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #sweet-products .producto-item .cantidad-producto:focus, #products-list #cafeteria-products #salad-products .producto-item .cantidad-producto:focus, #products-list #bakery-products #hot-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #cold-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #special-coffee .producto-item .cantidad-producto:focus, #products-list #bakery-products #sweet-products .producto-item .cantidad-producto:focus, #products-list #bakery-products #salad-products .producto-item .cantidad-producto:focus {
   border-color: #4CAF50; /* Color verde cuando el campo está activo */
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   #products-list #cafeteria-products #hot-coffee .producto-item, #products-list #cafeteria-products #cold-coffee .producto-item, #products-list #cafeteria-products #special-coffee .producto-item, #products-list #cafeteria-products #sweet-products .producto-item, #products-list #cafeteria-products #salad-products .producto-item, #products-list #bakery-products #hot-coffee .producto-item, #products-list #bakery-products #cold-coffee .producto-item, #products-list #bakery-products #special-coffee .producto-item, #products-list #bakery-products #sweet-products .producto-item, #products-list #bakery-products #salad-products .producto-item {
     height: 420px;
   }
@@ -459,7 +459,7 @@ header .carrito-container .carrito-lista #pagar-btn:hover {
     object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
   }
 }
-@media (max-width: 626px) {
+@media (max-width: 500px) {
   #products-list #cafeteria-products #hot-coffee, #products-list #cafeteria-products #cold-coffee, #products-list #cafeteria-products #special-coffee, #products-list #cafeteria-products #sweet-products, #products-list #cafeteria-products #salad-products, #products-list #bakery-products #hot-coffee, #products-list #bakery-products #cold-coffee, #products-list #bakery-products #special-coffee, #products-list #bakery-products #sweet-products, #products-list #bakery-products #salad-products {
     gap: 20px;
   }

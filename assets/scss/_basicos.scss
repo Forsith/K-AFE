@@ -8,7 +8,7 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    @media (max-width:626px){
+    @media (max-width:500px){
         height: 70vh;
     }
 }
