@@ -60,23 +60,54 @@ header {
   display: flex;
   justify-content: space-between;
   height: 130px;
-  align-items: center;
   padding: 10px 40px;
   background-color: #FBFBFB;
   border-bottom-style: solid;
   border-width: 1px;
   border-color: #514C4C;
   flex: 0 0 auto; /* El header ocupa solo el espacio necesario */
-  position: relative;
+  align-items: center;
+  font-family: "Noto Serif KR", serif;
+}
+header .logo-resp {
+  display: none;
+}
+@media (max-width: 626px) {
+  header .logo-resp {
+    display: block;
+  }
+}
+@media (max-width: 626px) {
+  header .logo {
+    display: none;
+  }
+}
+header .visible {
+  opacity: 1;
+  visibility: visible;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0px 30px;
 }
 header nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 1rem;
+  color: black;
+  font-size: 18px;
+}
+@media (max-width: 626px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: end;
+  }
 }
 header nav ul .menu-item {
-  margin: 0 20px;
   position: relative;
 }
 header nav ul .menu-item .submenu {
@@ -86,7 +117,7 @@ header nav ul .menu-item .submenu {
   left: 50%; /* Centramos el submenú */
   transform: translateX(-50%); /* Ajustamos para que esté alineado con el centro del padre */
   display: none;
-  background-color: #FBFBFB;
+  background-color: #514C4C;
   padding: 10px 0;
   z-index: 100; /* Asegura que el submenú aparezca por encima de otros elementos */
 }
@@ -95,6 +126,7 @@ header nav ul .menu-item .submenu li {
 }
 header nav ul .menu-item .submenu a {
   white-space: nowrap;
+  color: #FFF6E5;
 }
 header nav ul .menu-item a {
   color: #514C4C;
@@ -112,6 +144,49 @@ header nav ul .menu-item:hover .submenu {
 }
 header nav ul .menu-item:hover .submenu .submenuhover {
   display: block;
+}
+@media (max-width: 626px) {
+  header nav ul .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+header nav .cerrar-menu {
+  display: none;
+}
+@media (max-width: 626px) {
+  header nav .cerrar-menu {
+    display: block;
+  }
+}
+@media (max-width: 626px) {
+  header nav {
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    justify-content: stretch;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem 2rem 0 5rem;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    gap: 1rem;
+    width: auto;
+  }
+}
+header .abrir-menu {
+  display: none;
+}
+@media (max-width: 626px) {
+  header .abrir-menu {
+    font-size: 32px;
+    display: block;
+    color: black;
+  }
 }
 header .carrito-container {
   position: absolute; /* Para poder posicionar el carrito-lista */

@@ -12,6 +12,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#open");
+const cerrar = document.querySelector("#close");
+
+abrir.addEventListener("click",()=>{
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener
+("click",()=>{
+    nav.classList.remove("visible");
+})
+
 let productos = [];
 let count = 0;
 let carrito = [];
@@ -246,3 +259,4 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarProductosJSON();
   cargarLocalStorage();
 });
+
