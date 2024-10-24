@@ -228,7 +228,7 @@ function mostrarFormularioCheckout() {
   localStorage.setItem("totalCarrito", total);
 
   // Redirigir a la página de checkout
-  window.location.href = "K-AFE/pages/checkout.html";
+  window.location.href = "pages/checkout.html";
 }
 
 

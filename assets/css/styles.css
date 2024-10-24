@@ -374,7 +374,7 @@ header .carrito-container .carrito-lista #pagar-btn:hover {
 #products-list #cafeteria-products #hot-coffee, #products-list #cafeteria-products #cold-coffee, #products-list #cafeteria-products #special-coffee, #products-list #cafeteria-products #sweet-products, #products-list #cafeteria-products #salad-products, #products-list #bakery-products #hot-coffee, #products-list #bakery-products #cold-coffee, #products-list #bakery-products #special-coffee, #products-list #bakery-products #sweet-products, #products-list #bakery-products #salad-products {
   display: flex;
   flex-wrap: wrap; /* Permite que los productos se muevan a la siguiente línea si no caben */
-  gap: 40px; /* Espacio entre los productos */
+  gap: 80px; /* Espacio entre los productos */
   justify-content: center; /* Alinea los productos al inicio de la fila */
 }
 #products-list #cafeteria-products #hot-coffee .producto-item, #products-list #cafeteria-products #cold-coffee .producto-item, #products-list #cafeteria-products #special-coffee .producto-item, #products-list #cafeteria-products #sweet-products .producto-item, #products-list #cafeteria-products #salad-products .producto-item, #products-list #bakery-products #hot-coffee .producto-item, #products-list #bakery-products #cold-coffee .producto-item, #products-list #bakery-products #special-coffee .producto-item, #products-list #bakery-products #sweet-products .producto-item, #products-list #bakery-products #salad-products .producto-item {
